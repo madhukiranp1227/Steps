@@ -5,7 +5,16 @@ const messages = [
     "Apply for jobs 💼",
     "Invest your new income 🤑",
 ];
+
 export default function App() {
+    return (
+        <div>
+            <Steps />
+        </div>
+    );
+}
+
+function Steps() {
     const [step, setStep] = useState(1);
     const [isOpen, setIsOpen] = useState(true);
 
@@ -17,7 +26,6 @@ export default function App() {
 
     function handleNext() {
         if (step < 3) {
-            setStep((s) => s + 1);
             setStep((s) => s + 1);
         }
     }
